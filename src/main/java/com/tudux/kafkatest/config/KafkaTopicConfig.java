@@ -8,6 +8,11 @@ import org.springframework.kafka.config.TopicBuilder;
 @Configuration
 public class KafkaTopicConfig {
 	
+	/*Dummy console consumer
+	 * .\kafka-console-consumer.bat --topic testingTopic --from-beginning --bootstrap-server localhost:9092 
+	 * */
+	
+	
 	@Bean
 	public NewTopic testTopic() {
 		return TopicBuilder.name("testingTopic")
